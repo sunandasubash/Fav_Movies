@@ -1,0 +1,14 @@
+body{
+background-color:rgb(192, 228, 149);
+}
+.main{
+padding:30px;
+}
+.container{
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:50px;
+}
+

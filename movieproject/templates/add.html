@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container form-group">
+    <form method="POST" enctype="multipart/form-data" class="form-control" style="width:300px; height:300px; padding:25px;">
+    {% csrf_token %}
+        <input type="text" name="name" placeholder="Movie Name"><br>
+        <input type="text" name="des" placeholder="Description"><br>
+        <input type="number" name="year" placeholder="Release year"><br>
+        <input type="file" name="img"><br>
+        <div class="button form-group">
+        <input type="submit" class="btn btn-success btn-sm" >
+        </div>
+    </form>
+</div>
+{% endblock %}
